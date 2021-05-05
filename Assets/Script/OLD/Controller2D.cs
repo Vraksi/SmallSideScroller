@@ -77,8 +77,7 @@ public class Controller2D : MonoBehaviour
                     //der tangent med det objekt vi rammer 
                     if (collisions.climbingSlope)
                     {
-                        velocity.y = Mathf.Tan(collisions.slopeAngle * Mathf.Deg2Rad) * Mathf.Abs(velocity.x);
-                        print(velocity.y);
+                        velocity.y = Mathf.Tan(collisions.slopeAngle * Mathf.Deg2Rad) * Mathf.Abs(velocity.x);                        
                     }
 
                     collisions.left = directionX == -1;
